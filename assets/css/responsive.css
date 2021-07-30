@@ -389,7 +389,20 @@
 	.remove-ext.contact-info-sec{width: 100%;}
 	.remove-ext.margn-btm{margin-bottom: 0;}
 	.select-wrp .chosen-container-single .chosen-drop{width: 100%;}
-
+	.fact-box {
+		float: left;
+		width: 50%;
+	}
+	.remove-ext5, .dish-item {
+		width: 500px;
+		margin-left: 100px;
+	}
+	.dish-item > .item-meta {
+		padding-left: 25%;
+	}
+	.step-box {
+		margin-left: 40px;
+	}
 }
 
 @media (min-width: 641px) and (max-width:736px){
@@ -399,6 +412,25 @@
 	.restaurant-search-form .input-field {
 	    margin-bottom: 7px;
 	}
+	.remove-ext5 {
+		display: inline-block;
+		width: 500px;
+		padding-left: 80px;
+		margin-left: 20px;
+	}
+	.dish-item {
+		width: 500px;
+		margin-left: 60px;
+	}
+	.item-meta {
+		padding-left: 125px;
+	}
+	.item-meta > img{
+		margin-left: 30px;
+	}
+	.step-box {
+		margin-left: 40px;
+	}
 
 }
 
@@ -406,9 +438,19 @@
 	.block.top-padd30 {
 		padding: 30px 10px;
 	}
+	.restaurant-search-form2 > input {
+		height: 50px;
+	}
+	.restaurant-search-form2 > button {
+		width: 150px;
+	}
 	.top-restaurant-carousel2{margin-bottom: 40px;}
 	.poplr-dish > img{
+		margin-left: 35px;
 		width: 65px;
+	}
+	.item-meta > img {
+		margin-left: 25px;
 	}
 	.newsletter-popup-wrapper{display: none;}
 	.restaurant-search-form .input-field{margin-bottom: 10px;}
@@ -498,10 +540,30 @@
 	.fixed-bg {
 	    background-attachment: fixed !important;
 	}
+	.funfacts {
+		width: 350px;
+	}
+	.popular-of-month {
+		padding: 25px;
 
-
-
-
+	}
+	/* .item-meta {
+		padding-left: 20px;
+	} */
+	.dish-meta {
+		display: block;
+	}
+	.remove-ext5 {
+		width: 400px;
+		margin-left: 32px;
+	}
+	.dish-item {
+		width: 400px;
+		margin-left: 30px;
+	}
+	.step-box {
+		margin-left: 0;
+	}
 	
 
 

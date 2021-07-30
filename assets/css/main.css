@@ -729,7 +729,9 @@ header {
 .logo-menu-sec {
   float: left;
   width: 100%;
+  height: 100px;
   background-color: #fff;
+  overflow: visible;
 }
 .logo {
   float: left;
@@ -743,10 +745,12 @@ nav {
   width: 100%;
   max-width: 80%;
 }
-.menu-sec {
+/* .menu-sec {
   float: left;
   width: 100%;
-}
+  height: 80px;
+  overflow: visible;
+} */
 nav > div > ul {
   float: left;
   padding-left: 0;
@@ -759,8 +763,8 @@ nav > div > ul > li {
     font-family: poppins;
     font-size: 18px;
     font-weight: 600;
-    margin-right: 35px;
-    padding: 32px 35px 32px 0;
+    margin-right: 20px;
+    padding: 32px 20px 32px 0;
     position: relative;
 }
 nav > div > ul > li span {
@@ -785,10 +789,11 @@ nav > div > ul > li:before {
 nav > div > ul > li:last-child:before {display: none;}
 .menu-sec > a {
     color: #fff;
-    float: right;
+    float: left;
     font-size: 12px;
     font-weight: 600;
-    margin-top: 33px;
+    margin-top: 28px;
+    margin-left: 25px;
     padding: 14px 38px;
 }
 .menu-sec > a:hover{color: #000;}
@@ -875,16 +880,32 @@ header.sticky .topbar {
 header.sticky .logo {margin: 15px 0;}
 header.sticky .logo > h1 img {max-width: 50%;}
 header.sticky nav > div > ul > li {
-  padding: 18px 35px 18px 0;
+  padding: 18px 20px 18px 0;
   font-size: 17px;
 }
-header.sticky .menu-sec > a {margin-top: 19px;}
+header.sticky .logo-menu-sec {
+  height: 75px;
+}
+header.sticky .menu-sec > a {margin-top: 14px;}
 header.sticky nav > div > ul > li span {font-size: 11px;}
+header.sticky .user-info-header {
+  margin-left: 40px;
+  margin-top: 5px;
+}
 /*===== Responsive Header =====*/
 .responsive-header {
   float: left;
   display: none;
   width: 100%;
+}
+.responsive-header .user-info-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+}
+.responsive-header .user-info-header a{
+  color: #FFFFFF;
 }
 .responsive-topbar {
   float: left;
@@ -947,6 +968,7 @@ header.sticky nav > div > ul > li span {font-size: 11px;}
   cursor: pointer;
 }
 .menu-lst {
+  margin-top: 20px;
   float: left;
   width: 100%;
   margin-bottom: 55px;
@@ -5647,16 +5669,48 @@ html.thanks-message-popup-active .thanks-message {
   width: 100%;
   padding: 35px 30px 30px;
 }
+.user-info-header {
+  float: left;
+  padding: 0px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
 .user-info > img {
   float: left;
   margin-right: 15px;
   border: 3px solid;
+}
+.user-info-header > img {
+  display: block;
+  float: left;
+  width: 40px;
+  margin-left: 17%;
 }
 .user-info-inner {display: table;}
 .user-info-inner > h5 {
   color: #fff;
   font-family: Poppins;
   margin: 0 0 5px;
+}
+.user-info-header .user-info-inner{
+  margin-top: 4px;
+  display: block;
+}
+.user-info-header .notification {
+    width: 10px;
+    height: 15px;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.user-info-header .notification > i {
+  font-size: 10px;
+}
+.user-info-header .user-info-inner > h5 {
+  color: #333333;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: bold;
 }
 .user-info-inner > span {
   font-family: Poppins;
@@ -5677,6 +5731,21 @@ html.thanks-message-popup-active .thanks-message {
 .user-info-inner > a:focus {
   background-color: #333;
   color: #fff;
+}
+.user-dashboard {
+  float: right;
+  left: 10%;
+  z-index: 999;
+  display: none;
+  background-color:#F9F9F9;
+  padding: 10px;
+  border-radius: 5px;
+}
+.user-dashboard .profile-sidebar-inner > ul {
+  border-bottom: 0;
+  float: left;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
 }
 .profile-sidebar-inner > ul {
   border-bottom: 0;
@@ -5706,6 +5775,16 @@ html.thanks-message-popup-active .thanks-message {
 }
 .profile-sidebar-inner > ul > li a:hover {background-color: transparent;}
 .profile-sidebar-inner > ul > li + li {margin-top: 22px;}
+.user-dashboard .profile-sidebar-inner > ul > li a:before {
+  content: "\f111";
+  position: absolute;
+  right: 0;
+  font-family: fontawesome;
+  font-size: 10px;
+  opacity: 0;
+  top: 50%;
+  margin-top: -10px;
+}
 .profile-sidebar-inner > ul > li a:before {
   content: "\f105";
   position: absolute;

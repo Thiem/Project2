@@ -471,7 +471,15 @@ jQuery(window).on('load', function ($) {
       }
     });
   }
-
+  jQuery('.user-info-inner h5 a').on('click', function(even){
+    even.preventDefault();
+    var dashboard = jQuery('.user-dashboard');
+    if (dashboard.css("display") == 'none'){
+      dashboard.css("display", "block");
+    }else{
+      dashboard.css("display", "none");
+    }
+  });
 });
 
 
