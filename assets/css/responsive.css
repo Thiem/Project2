@@ -1,6 +1,50 @@
 @media (max-width:1200px){
 }
+@media (min-width: 1025px) and (max-width: 1199px){
+	/* header */
+	.menu-sec ul li {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	.menu-sec > a {
+		margin-left: 20px;
+	}
+	.user-info-header {
+		margin-top: 12px;
+		margin-left: 20px;
+	}
+	/* sticky header */
+	.sticky .menu-sec ul li {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	.sticky .menu-sec > a {
+		margin-left: 0;
+		padding : 14px 30px;
+	}
+	.sticky .user-info-header {
+		margin-left: 20px !important;
+		margin-top: 0px !important;
+	}
 
+	.remove-ext5 {
+		padding-left: 30px;
+	}
+	.remove-ext5 >div{
+		width: 32%;
+	}
+	.remove-ext5 .rite-meta {
+		margin-left: 31%;
+	}
+	.popular-dish-box .restaurant-info img{
+		display: block;
+		margin-left: 56px;
+	}
+	.pop-dish .item-meta img{
+		display: block;
+		margin-left: 40px;
+	}
+}
 @media (max-width:1024px){
 	html,body{overflow-x: hidden;}
 	.block{padding: 60px 0;}
@@ -18,7 +62,7 @@
 	.widget-data::after {width: 103%;}
 	nav > div > ul > li {padding: 25px 25px 25px 0;margin-right: 25px;}
 	.logo {margin: 20px 0;}
-	.menu-sec > a {margin-top: 28px;padding: 10px 15px;margin-right: -20px;font-size: 11px;}
+	.menu-sec > a {margin-top: 29px;padding: 15px 15px;margin-right: -20px;font-size: 11px;}
 	.topbar-register {margin-right: 0;}
 	.page-title-inner {max-width: 90%;}
 	.page-top-img-mockup {max-width: 40%;}
@@ -138,13 +182,114 @@
 	.fixed-bg {
 	    background-attachment: initial !important;
 	}
-
-
-	
-
-
+	/* header */
+	.menu-sec ul li {
+		margin-top: 13px;
+		font-size: 13px;
+		margin-right: 15px;
+	}
+	.menu-sec > a {
+		margin-left: 20px;
+	}
+	.user-info-header {
+		margin-top: 12px;
+	}
+	/* sticky header */
+	.sticky .menu-sec ul li {
+		margin-top: 5px;
+		font-size: 13px;
+		margin-right: 10px;
+	}
+	.sticky .menu-sec > a {
+		margin-top: 17px !important;
+		margin-left: 0;
+		padding : 14px 15px;
+	}
+	.sticky .user-info-header {
+		margin-top: -2px !important;
+	}
+	.remove-ext5 {
+		padding-left: 30px;
+	}
+	.remove-ext5 >div{
+		width: 32%;
+	}
+	.remove-ext5 .rite-meta {
+		margin-left: 31%;
+	}
+	.popular-dish-box .restaurant-info img{
+		display: block;
+		margin-left: 56px;
+	}
+	.pop-dish .item-meta img{
+		display: block;
+		margin-left: 40px;
+	}
 }
+@media (min-width : 981px) and (max-width : 1023px) {
 
+	.logo {margin: 20px 15px 20px 0px;width: 13%;}
+		/* header */
+		.menu-sec ul li {
+			margin-top: 13px;
+			font-size: 11px;
+			margin-right: 12px;
+			padding: 25px 12px 25px 0;
+		}
+		.menu-sec > a {
+			margin-top: 32px;
+			margin-left: 12px;
+			padding : 12px 12px;
+		}
+		.user-info-header {
+			margin-top: 12px;
+		}
+		/* sticky header  */
+		.sticky .logo {margin: 20px 0px 20px 0px; width: auto;}
+		.sticky .menu-sec ul li {
+			margin-top: 4px;
+			font-size: 11px;
+			margin-right: 12px;
+			padding: 25px 12px 25px 0;
+		}
+		.sticky .menu-sec > a {
+			margin-top: 19px !important;
+			margin-left: -10px;
+			padding : 12px 12px;
+		}
+		.sticky .user-info-header {
+			margin-top: 12px;
+		}
+
+		.user-dashboard {
+			width: 50%;
+		}
+		.user-dashboard ul li {
+			margin-top: 0px !important;
+			padding :15px 12px 15px 0 !important;
+		}
+		.remove-ext5 {
+			padding-left: 30px;
+		}
+		.remove-ext5 >div{
+			width: 49%;
+		}
+		.remove-ext5 .rite-meta {
+			margin-left: 31%;
+		}
+		.dish-item {
+			width: 50%;
+			margin-left: 25%;
+		}
+		.popular-dish-box .restaurant-info img{
+			display: block;
+			margin-left: 56px;
+		}
+		.pop-dish .item-meta img{
+			display: block;
+			margin-left: 70px;
+		}
+}
 @media (max-width:980px){
 	header {display: none;}
 	main {padding-top: 0 !important;}
@@ -288,7 +433,27 @@
 		margin-bottom: 18px;
 		padding-bottom: 13px;
 	}
-
+	.remove-ext5 {
+		padding-left: 30px;
+	}
+	.remove-ext5 >div{
+		width: 44%;
+	}
+	.remove-ext5 .rite-meta {
+		margin-left: 22%;
+	}
+	.dish-item {
+		width: 50%;
+		margin-left: 25%;
+	}
+	.popular-dish-box .restaurant-info img{
+		display: block;
+		margin-left: 56px;
+	}
+	.pop-dish .item-meta img{
+		display: block;
+		margin-left: 70px;
+	}
 
 }
  
@@ -403,6 +568,9 @@
 	.step-box {
 		margin-left: 40px;
 	}
+	.remove-ext5 .popular-dish-box {
+		width: 400px !important;
+	}
 }
 
 @media (min-width: 641px) and (max-width:736px){
@@ -430,6 +598,9 @@
 	}
 	.step-box {
 		margin-left: 40px;
+	}
+	.remove-ext5 .popular-dish-box {
+		width: 500px !important;
 	}
 
 }
@@ -564,7 +735,9 @@
 	.step-box {
 		margin-left: 0;
 	}
-	
+	.remove-ext5 .popular-dish-box {
+		width: 400px !important;
+	}
 
 
 }
