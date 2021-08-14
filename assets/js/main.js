@@ -73,6 +73,28 @@ $(document).ready(function(){
   //   return false;
   // });
 
+  //===== User Location toggle  =====//
+  $('#show-input-address').on('click', function(){
+      const form = $(this).siblings('form');
+      const caret = $(this).find('i');
+      const inputField = form.find("input");
+      if(form.css("display") === 'none'){
+        form.css("display", "block");
+        caret.attr("class", "fa fa-caret-up");
+        inputField.focus();
+      }else{
+        form.css("display", "none");
+        caret.attr("class", "fa fa-caret-down");
+      }
+  });
+  //===== Order Cancel toggle Script =====//
+  $('#cancel-order-btn').on('click', function(){
+      $("div.cancel-order").slideDown( "slow" );
+  });
+  $('#back').on('click', function(){
+    $("div.cancel-order").slideUp("slow");
+});
+
   //===== Order Popup Script =====//
   $('.order-popup-btn').on('click',function(){
     $('html').addClass('order-popup-active');
