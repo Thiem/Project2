@@ -502,6 +502,8 @@ jQuery(window).on('load', function ($) {
       dashboard.css("display", "none");
     }
   });
+  // js drop menu page restaurant detail
+
 });
 
 
